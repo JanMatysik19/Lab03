@@ -5,7 +5,8 @@
     android:id="@+id/tvUrl"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondActivity">
+    tools:context=".SecondActivity"
+    android:backgroundTint="#9288F8">
 
     <Button
         android:id="@+id/act1Btn"
@@ -14,9 +15,11 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="25dp"
+        android:backgroundTint="#3E1E68"
         android:onClick="btnAct1_click"
         android:text="WYWOŁAJ AKTYWNOŚĆ Z IMIENIEM I NAZWISKIEM"
         android:textColor="#FDFDFD"
+        app:cornerRadius="25px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,8 +32,11 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="25dp"
+        android:backgroundTint="#5D2F77"
         android:onClick="btnAct2_click"
         android:text="WYWOŁAJ APLIKACJĘ OBSŁUGUJĄCĄ PODANY ADRES URL"
+        android:textColor="@color/white"
+        app:cornerRadius="25px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/act1Btn" />
@@ -42,8 +48,11 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="25dp"
+        android:backgroundTint="#E45A92"
         android:onClick="btnAct3_click"
         android:text="WYŚWIETL AKTYWNOŚĆ Z DANYMI POŁOŻENIA (GEO:)"
+        android:textColor="@color/white"
+        app:cornerRadius="25px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/act2Btn" />
@@ -55,6 +64,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="25dp"
+        android:backgroundTint="#FFACAC"
         android:ems="10"
         android:inputType="text"
         android:text="http://"

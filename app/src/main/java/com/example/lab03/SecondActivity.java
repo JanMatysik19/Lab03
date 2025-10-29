@@ -3,8 +3,10 @@ package com.example.lab03;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -40,8 +42,14 @@ public class SecondActivity extends AppCompatActivity {
     public void btnAct2_click(View v) {
         String url = urlEt.getText().toString();
 
-        var intn = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-        startActivity(intn);
+        try {
+            var intn = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(intn);
+        } catch (Exception e) {
+            var toast = Toast.makeText(this, "Zły link url", Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.BOTTOM, 0, 0);
+            toast.show();
+        }
     }
 
     public void btnAct3_click(View v) {
